@@ -24,10 +24,10 @@ Pod::Spec.new do |s|
 			Define a protocol corresponding to your API and then let 				Kraken resolve this protocol to its corresponding instance 				dynamically at runtime. This allows creation of separate 				configurations for the App and the tests to resolve the same 			protocol to different instances dynamically improving 				testability.
                        DESC
 
-  s.homepage         = "https://github.com/sabirvirtuoso/Kraken"
+  s.homepage         = "https://github.com/4alltecnologia/Kraken"
   s.license          = 'MIT'
   s.author           = { "Syed Sabir Salman-Al-Musawi" => "sabirvirtuoso@gmail.com" }
-  s.source           = { :git => "https://github.com/sabirvirtuoso/Kraken.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/4alltecnologia/Kraken", :tag => s.version.to_s }
   s.social_media_url = 'https://www.facebook.com/syed.musawi'
 
   s.platform     = :ios, '8.0'
