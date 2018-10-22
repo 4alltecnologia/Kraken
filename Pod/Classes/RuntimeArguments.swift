@@ -30,7 +30,7 @@ import Foundation
 
 extension Kraken {
 
-    public static func register(_ interface: Any, tag: DependencyTagConvertible? = nil, scope: DependencyScope = .prototype, factory: () -> Injectable?, completionHandler: ((_ resolvedInstance: Injectable) -> ())? = nil) {
+    public static func register(_ interface: Any, tag: DependencyTagConvertible? = nil, scope: DependencyScope = .prototype, factory: @escaping () -> Injectable?, completionHandler: ((_ resolvedInstance: Injectable) -> ())? = nil) {
         let definitionKey = prepareDefinitionKey(forInterface: interface, andTag: tag)
         registerFactory(interface, tag: tag, scope: scope, factory: factory, completionHandler: completionHandler)
 
